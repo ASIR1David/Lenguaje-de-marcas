@@ -1,0 +1,52 @@
+body{
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 80px;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    text-shadow: green 1px 0 10px;
+    border-bottom: 6px dashed rgb(45, 44, 44);
+    padding-bottom: 10px;
+}
+
+p{
+    text-indent: 40px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+p.especial2{
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+p.especial1{
+    text-align-last: right;
+    font-variant: small-caps;
+}
+
+h2{
+    color: rgb(13, 13, 103);
+}
+
+blockquote{
+    border-left: 10px solid rgb(107, 105, 105);
+    padding-left: 15px;
+    font-style: italic;
+}
+
+span#tituloAngel{
+    font-style: normal;
+}
+
+span.lenguajes{
+    color: red;
+}
+
+h3{
+    color: green;
+}
