@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(228, 228, 161);
+    border: 1px solid black;
+}
+header h1{
+    margin-left: 20px;
+}
+nav{
+    background-color: grey;
+    border: 1px solid black;
+}
+li{
+  text-transform: uppercase;  
+  font-size: 12px;
+  display: inline-block;
+  font-weight: bold;
+}
+a li{
+    margin-left: 70px;
+}
