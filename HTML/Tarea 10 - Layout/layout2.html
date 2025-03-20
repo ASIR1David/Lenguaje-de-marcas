@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/Tarea 3 - Layout/layout2.css">
     <title>Document</title>
 </head>
+
 <body>
 
-<header>
+    <header>
 
-    <h1>Ejemplo de blog para DAW</h1>
+        <h1>Ejemplo de blog para DAW</h1>
 
-</header>
-<nav>
-    <ul>
-        <li>principal</li>
-        <a href=""><li>fotos</li></a>
-        <a href=""><li>videos</li></a>
-        <a href=""><li>contacto</li></a>
-    </ul>
-</nav>
+    </header>
+    <nav>
+        <ul>
+            <li>principal</li>
+            <a href="">
+                <li>fotos</li>
+            </a>
+            <a href="">
+                <li>videos</li>
+            </a>
+            <a href="">
+                <li>contacto</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Titulo del mensaje uno</h1>
+            <h2>Subtítulo del mensaje uno</h2>
+            <p id="hr">publicado 10-12-2018</p>
+            <hr>
+            <p>Este es el texto de mi primer mensaje</p>
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="w3c">
+                <p>Esta es la imagen del primer mensaje</p>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, necessitatibus dolorum temporibus
+                nulla, libero atque dolorem soluta et vitae laboriosam eius vero. Ratione, repellat. Ea porro explicabo
+                quo hic illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, enim similique accusantium nesciunt
+                error excepturi dolore eius molestias deserunt assumenda quibusdam veniam, illo libero rerum quos
+                possimus cupiditate voluptas est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, assumenda quod, laudantium qui
+                soluta beatae laboriosam magni consequatur quasi ut deleniti quos accusamus. Omnis maiores voluptate
+                reiciendis ex error repellat!</p>
 
-    
+            <p id="comentario">comentarios (0)</p>
+        </section>
+
+        <aside>
+            <p>Mensaje numero uno</p>
+            <hr>
+            <p>Mensaje numero dos</p>
+            <hr>
+            <p>Mensaje numero tres</p>
+            <hr>
+            <p>Mensaje numero cuatro</p>
+            <hr>
+            <p>Mensaje numero cinco</p>
+            <hr>
+
+        </aside>
+
+        <div id="dos">
+
+            <h1>Titulo del mensaje dos</h1>
+            <h2>Subtítulo del mensaje dos</h2>
+            <p id="hr">publicado 14-12-2018</p>
+            <hr>
+            <p>Este es el texto de mi segundo mensaje</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, necessitatibus dolorum temporibus
+                nulla, libero atque dolorem soluta et vitae laboriosam eius vero. Ratione, repellat. Ea porro explicabo
+                quo hic illum.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1>Derechos reservados © 2020-2021</h1>
+    </footer>
+
 </body>
+
 </html>
