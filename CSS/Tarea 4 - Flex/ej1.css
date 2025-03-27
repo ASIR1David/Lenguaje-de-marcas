@@ -1,0 +1,18 @@
+div{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+
+}
+
+div.nig{
+    border: 1px solid rgb(107, 16, 104);
+    background-color: rgb(238, 158, 230);
+    height: 499px;
+    width: 29px;
+    display: inline-flex;
+    justify-content: center;
+
+}
