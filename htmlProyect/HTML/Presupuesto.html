@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/PaginaPrincipal.css">
     <link rel="icon" type="image/x-icon" href="../IMG/Favicon.png">
 </head>
+
 <body>
     <header class="header-foto">
         <img src="../IMG/pp.webp" alt="Fontanería" class="imagen-fondo">
@@ -29,59 +31,129 @@
             </div>
         </div>
     </header>
+    <main class="tabla-operativa">
+        <section>
+            <h2>Tabla de presupuesto mensual de servicios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Mes 1</th>
+                        <th>Mes 6</th>
+                        <th>Mes 12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="4" class="seccion">Fontanería</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Fontanería</td>
+                        <td>100</td>
+                        <td>120</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Fontanería</td>
+                        <td>500</td>
+                        <td>550</td>
+                        <td>600</td>
+                    </tr>
 
-    <main class="presupuesto">
-        <section class="formulario-presupuesto">
-            <form action="#" method="post">
-                <div class="campo">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+                    <tr>
+                        <th colspan="4" class="seccion">Gas</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Gas</td>
+                        <td>110</td>
+                        <td>130</td>
+                        <td>160</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Gas</td>
+                        <td>700</td>
+                        <td>750</td>
+                        <td>800</td>
+                    </tr>
 
-                <div class="campo">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                    <tr>
+                        <th colspan="4" class="seccion">Calefacción</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Calefacción</td>
+                        <td>130</td>
+                        <td>150</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Calefacción</td>
+                        <td>850</td>
+                        <td>900</td>
+                        <td>950</td>
+                    </tr>
 
-                <div class="campo">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>
+                    <tr>
+                        <th colspan="4" class="seccion">Desatascos</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Desatascos</td>
+                        <td>90</td>
+                        <td>95</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Desatascos</td>
+                        <td>300</td>
+                        <td>320</td>
+                        <td>340</td>
+                    </tr>
 
-                <div class="campo">
-                    <label for="tipo">Tipo de servicio</label>
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="fontaneria">Fontanería</option>
-                        <option value="gas">Instalación de gas</option>
-                        <option value="calefaccion">Calefacción</option>
-                        <option value="desatascos">Desatascos</option>
-                        <option value="presion">Grupos de presión</option>
-                        <option value="piscina">Piscinas</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
+                    <tr>
+                        <th colspan="4" class="seccion">Grupos de Presión</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Presión</td>
+                        <td>120</td>
+                        <td>130</td>
+                        <td>140</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Presión</td>
+                        <td>600</td>
+                        <td>650</td>
+                        <td>700</td>
+                    </tr>
 
-                <div class="campo-textarea">
-                    <label for="descripcion">Descripción del proyecto</label>
-                    <textarea id="descripcion" name="descripcion" rows="6" required></textarea>
-                </div>
+                    <tr>
+                        <th colspan="4" class="seccion">Piscinas</th>
+                    </tr>
+                    <tr>
+                        <td>Servicio - Piscina</td>
+                        <td>150</td>
+                        <td>170</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>Instalación - Piscina</td>
+                        <td>1000</td>
+                        <td>1050</td>
+                        <td>1100</td>
+                    </tr>
 
-                <div class="campo-textarea">
-                    <label for="imagen">Adjuntar imagen (opcional)</label>
-                    <input type="file" id="imagen" name="imagen" accept="image/*">
-                </div>
-
-                <div class="campo-boton">
-                    <button type="submit">Enviar solicitud</button>
-                </div>
-            </form>
+                    <tr class="total">
+                        <td><strong>Total estimado</strong></td>
+                        <td><strong>4,750</strong></td>
+                        <td><strong>5,345</strong></td>
+                        <td><strong>5,910</strong></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer-left">© 2025 Fontalux Todos los derechos reservados</div>
         <div class="footer-right">Producido por David</div>
     </footer>
 </body>
+
 </html>

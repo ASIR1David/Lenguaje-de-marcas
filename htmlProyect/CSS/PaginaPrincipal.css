@@ -349,84 +349,55 @@ nav ul li a:hover {
     font-size: 16px;
     line-height: 1.5;
 }
-.presupuesto {
-    background-color: #f2f2f2;
+.tabla-operativa {
+    background-color: #f9f9f9;
     color: #333;
     padding: 60px 20px;
     text-align: center;
 }
 
-.presupuesto h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+.tabla-operativa h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
     color: #004466;
 }
 
-.formulario-presupuesto form {
-    max-width: 800px;
+.tabla-operativa table {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    text-align: left;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.formulario-presupuesto .campo,
-.formulario-presupuesto .campo-textarea,
-.formulario-presupuesto .campo-boton {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 2;
-}
-
-.formulario-presupuesto label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #004466;
-}
-
-.formulario-presupuesto input,
-.formulario-presupuesto select,
-.formulario-presupuesto textarea {
-    padding: 12px;
+.tabla-operativa th,
+.tabla-operativa td {
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 6px;
     font-size: 16px;
+    text-align: center;
 }
 
-.formulario-presupuesto input:focus,
-.formulario-presupuesto select:focus,
-.formulario-presupuesto textarea:focus {
-    outline: none;
-    border-color: #c40000;
-    box-shadow: 0 0 5px rgba(196, 0, 0, 0.3);
-}
-
-.formulario-presupuesto button {
-    background-color: #c40000;
+.tabla-operativa thead th {
+    background-color: #004466;
     color: white;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.tabla-operativa .seccion {
+    background-color: #007acc;
+    color: white;
     font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-self: center;
 }
 
-.formulario-presupuesto button:hover {
-    background-color: #a30000;
-}
-
-@media (max-width: 768px) {
-    .formulario-presupuesto form {
-        grid-template-columns: 1fr;
-    }
-
-    .formulario-presupuesto .campo,
-    .formulario-presupuesto .campo-textarea,
-    .formulario-presupuesto .campo-boton {
-        grid-column: span 1;
-    }
+.tabla-operativa .total {
+    background-color: #e0e0e0;
+    font-weight: bold;
 }
